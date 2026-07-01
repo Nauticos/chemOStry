@@ -6,13 +6,13 @@ chemOStry is my own web-based OS that has chemical inspiration!
 
 FEATURES
 
-*A welcome screen
-*A clock with the date, hours, minutes, and seconds
-*Draggable windows
-*Highlights when your cursor is over an icon
-*An app with lots of useful numbers for chemistry
-*A weather app with real life updates to places globally
-*A hidden secret! (Proton related?)
+* A welcome screen
+* A clock with the date, hours, minutes, and seconds
+* Draggable windows
+* Highlights when your cursor is over an icon
+* An app with lots of useful numbers for chemistry
+* A weather app with real life updates to places globally
+* A hidden secret! (Proton related?)
  
 
 TO RUN LOCALLY
