@@ -187,7 +187,7 @@ WeatherClose.addEventListener("click", function() {
   document.querySelector("#weatherError").style.display = "none";
 });
 
-const weatherApiKey = ''; 
+const weatherApiKey = config.WEATHER_API_KEY;; 
 
 const weatherSearchButton = document.querySelector('#weatherSearchButton');
 const weatherPlaceInput = document.querySelector('#weatherPlaceInput');
