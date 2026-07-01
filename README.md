@@ -1,7 +1,8 @@
 # chemOStry
 chemOStry is my own web-based OS that has chemical inspiration!
 
-![Example](Example.png) Here is an image of my OS!
+![Example](Images/Example.png) Here is an image of my OS!
+
 
 FEATURES
 
