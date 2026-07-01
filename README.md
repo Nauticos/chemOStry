@@ -24,4 +24,7 @@ WEATHER APP
 
 Uses OpenWeather API to get weather updates from around the globe
 
+Will NOT work on the website demo, since there is no API key attached
+However, if you download the files and input your own OpenWeather API key into config.js (see config.example.js for format), the weather app will work
+
 This is made using HTML, CSS, and JavaScript
