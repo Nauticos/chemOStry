@@ -1,10 +1,10 @@
 # chemOStry
-chemOStry is my own web-based OS that has chemical inspiration!
+**chemOStry** is my own web-based OS that has chemical inspiration!
 
 ![Example](Images/Example.png) Here is an image of my OS!
 
 
-FEATURES
+**<ins>FEATURES</ins>**
 
 * A welcome screen
 * A clock with the date, hours, minutes, and seconds
@@ -15,16 +15,16 @@ FEATURES
 * A hidden secret! (Proton related?)
  
 
-TO RUN LOCALLY
+**<ins>TO RUN LOCALLY</ins>**
 
 Just copy the repo and enjoy!
 
 
-WEATHER APP
+**<ins>WEATHER APP</ins>**
 
-Uses OpenWeather API to get weather updates from around the globe
+Uses **OpenWeather API** to get weather updates from around the globe
 
-Will NOT work on the website demo, since there is no API key attached
-However, if you download the files and input your own OpenWeather API key into config.js (see config.example.js for format), the weather app will work
+Will **NOT** work on the website demo, since there is no API key attached
+However, if you download the files and input your **<ins>own OpenWeather API key</ins>** into config.js (see config.example.js for format), the weather app **WILL** work
 
 This is made using HTML, CSS, and JavaScript
