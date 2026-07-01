@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<body style="font-family: Trebuchet MS, sans-serif; background-image:url(./Images/PeriodicTable.png); background-size:cover;">
+
+    <div id="top" style ="z-index: 2; font-size:20px; color: rgb(0, 157, 255); display: flex; justify-content: space-between; position: absolute; width: 100%; backdrop-filter: blur(5px); background-color: rgba(0, 0, 0, 0.5);">
+
+        <p id="welcomeopen" style="margin-left:20px; cursor:pointer" onMouseOver="selectIcon(welcomeopen)" onMouseOut="deselectIcon(welcomeopen)">
+            chemOStry
+        </p>
+
+        <div>
+            <p id="Protonopen" style="justify-content: center; font-size-adjust:10px;" onClick=openWindow(ProtonImage) onMouseOver="selectIcon(Protonopen)" onMouseOut="deselectIcon(Protonopen)">
+                <strong>Think like a proton and stay positive!</strong>
+            </p>
+        </div>
+
+        <p  id="timeElement" style="margin-right:20px;"></p>
+
+    </div>
+
+    <div onClick=addWindowTapHandling(welcome) class="window" id="welcome" style="top:10%; left:50%; transform: translate(-50%);">
+
+        <div class="windowheader" id="welcomeheader" style="cursor:move" onMouseOver="selectIcon(welcomeheader)" onMouseOut="deselectIcon(welcomeheader)">
+            Click here to move
+        </div>
+
+        <h1 class="headertext">
+            <strong>chemOStry</strong>
+        </h1> 
+        
+        <img style="width: 256px; height: 256px;" src="./Images/chemOStry logo.png" />
+
+        <p class="headertext">
+            This is chemOStry, a web-based OS made by me with chemical inspiration!
+        </p>
+   
+        <a class="headertext" href="https://www.rsc.org/">
+            The Royal Society of Chemistry website
+        </a>
+
+        <p class="headertext" style="color: red; font-size:xx-small;">
+            (Maybe you should click on the proton?)
+        </p>
+
+        <div class="closebutton" id="welcomeclose">
+
+            <p onMouseOver="selectIcon(welcomeclose)" onMouseOut="deselectIcon(welcomeclose)">
+                Close
+            </p>
+
+        </div>
+
+    </div>
+
+    <div id="ChemicalChroniclesIcon" style="padding-top: 64px;">
+
+        <div style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
+    
+            <img onClick="openWindow(ChemicalChronicles)" onMouseOver="selectIcon(ChemicalChroniclesIcon)" onMouseOut="deselectIcon(ChemicalChroniclesIcon)" src="./Images/ChemistryChroniclesIcon.png" style="width: 64px; height: 64px; border-radius: 5px;">
+
+            <p style="margin: 0px; color: #97ff85; ">Chemical Chronicles</p>
+        </div>
+        
+    </div>
+
+
+    <div id="WeatherIcon" style="padding-top: 64px;">
+
+        <div style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content; margin-left: 38px;">
+    
+            <img onClick="openWindow(Weather)" onMouseOver="selectIcon(WeatherIcon)" onMouseOut="deselectIcon(WeatherIcon)" src="./Images/weather.png" style="width: 64px; height: 64px; border-radius: 5px;">
+
+            <p style="margin: 0px; color: #97ff85; ">Weather</p>
+        </div>
+
+    </div>
+
+
+    <div onClick="addWindowTapHandling(ChemicalChronicles)" class="window" id="ChemicalChronicles" style="display: none; top:10%; left:50%; transform: translate(-50%);">
+
+        <div class="windowheader" id="ChemicalChroniclesheader" style="cursor:move" onMouseOver="selectIcon(ChemicalChroniclesheader)" onMouseOut="deselectIcon(ChemicalChroniclesheader)">
+            Click here to move
+        </div>
+
+
+        <div style="display: flex; gap: 20px; min-width: 400px;">
+            
+            <div id="leftbar" style="display:flex; flex-direction: column; color: rgb(0, 157, 255); border-right: 1px solid rgb(0, 157, 255); padding-right: 15px;">
+                <strong>Pages:</strong>
+            </div>
+
+            <div id="ChemicalChroniclesText" style="flex-grow: 1; min-height: 150px; color: black;">
+            </div>
+    
+        </div>
+
+
+        <div class="closebutton" id="ChemicalChroniclesclose" onMouseOver="selectIcon(ChemicalChroniclesclose)" onMouseOut="deselectIcon(ChemicalChroniclesclose)">
+            
+            <p>Close</p>
+
+        </div>
+
+    </div>
+
+    <div onClick="addWindowTapHandling(Weather)" class="window" id="Weather" style="display: none; top:10%; left:50%; transform: translate(-50%);">
+
+        <div class="windowheader" id="Weatherheader" style="cursor:move" onMouseOver="selectIcon(Weatherheader)" onMouseOut="deselectIcon(Weatherheader)">
+            Click here to move
+        </div>
+
+        <div style="padding: 10px; display: flex; flex-direction: column; gap: 15px;">
+
+            <div style="display: flex; gap: 8px;">
+
+                <input type="text" id="weatherPlaceInput" placeholder="Enter place name..." style="flex: 1; padding: 6px; border: 1px solid rgb(0, 157, 255); border-radius: 4px; outline: none;">
+
+                <button id="weatherSearchButton" style="background-color: rgb(0, 157, 255); color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">Search</button>
+
+            </div>
+
+            <div id="weatherDisplay" style="text-align: center; display: none;">
+
+                <h3 id="wPlaceName" style="margin: 0; color: rgb(0, 157, 255);">Place</h3>
+
+                <p id="wDescription" style="margin: 2px 0; font-size: 14px; text-transform: capitalize; color: rgb(77, 77, 77);">Clear Sky</p>
+
+                <h1 style="margin: 10px 0; font-size: 36px;"><span id="wTemp">--</span>°C</h1>
+                
+                <div style="display: flex; justify-content: space-between; font-size: 13px; color: rgb(37, 37, 37); margin-top: 10px; border-top: 1px dashed rgb(0, 157, 255); padding-top: 10px;">
+                    
+                    <div>Humidity: <strong id="wHumidity">--%</strong></div>
+
+                    <div>Wind: <strong id="wWind">-- m/s</strong></div>
+
+                </div>
+
+            </div>
+
+            <p id="weatherError" style="color: red; font-size: 13px; text-align: center; display: none; margin: 0;">Place not found! D:</p>
+
+        </div>
+
+
+        <div class="closebutton" id="Weatherclose" onMouseOver="selectIcon(Weatherclose)" onMouseOut="deselectIcon(Weatherclose)">
+            
+            <p>Close</p>
+
+        </div>
+
+    </div>
+
+    <div onClick="addWindowTapHandling(ProtonImage)" class="window" id="ProtonImage" style="padding-top: 8px; display: none; top:5%; left:50%; transform: translate(-50%);"">
+
+        <div class="windowheader" id="ProtonImageheader" style="cursor:move" onMouseOver="selectIcon(ProtonImageheader)" onMouseOut="deselectIcon(ProtonImageheader)">
+            Click here to move
+        </div>
+
+        <div style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
+    
+            <img src="./Images/Proton.jpg" style="width: 360px; height: 540px; border-radius: 5px;">
+
+        </div>
+
+        <div class="closebutton" id="Protonclose" onMouseOver="selectIcon(Protonclose)" onMouseOut="deselectIcon(Protonclose)">
+            
+            <p>Close</p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<head>
+  <script type="module" src="./script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
