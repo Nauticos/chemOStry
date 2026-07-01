@@ -187,7 +187,7 @@ WeatherClose.addEventListener("click", function() {
   document.querySelector("#weatherError").style.display = "none";
 });
 
-const weatherApiKey = config.WEATHER_API_KEY;; 
+const weatherApiKey = config.WEATHER_API_KEY;
 
 const weatherSearchButton = document.querySelector('#weatherSearchButton');
 const weatherPlaceInput = document.querySelector('#weatherPlaceInput');
@@ -240,7 +240,7 @@ weatherPlaceInput.addEventListener('keydown', (e) => {
     }
 });
 
-var ProtonClose = document.querySelector("#Protonclose");
-ProtonClose.addEventListener("click", function() {
+var ProtonImageClose = document.querySelector("#ProtonImageclose");
+ProtonImageClose.addEventListener("click", function() {
   closeWindow(ProtonImage);
 });
