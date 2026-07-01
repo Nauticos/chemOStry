@@ -28,3 +28,5 @@ Will **NOT** work on the website demo, since there is no API key attached
 However, if you download the files and input your **<ins>own OpenWeather API key</ins>** into config.js (see config.example.js for format), the weather app **WILL** work
 
 This is made using HTML, CSS, and JavaScript
+
+You can access a demo here: https://nauticos.github.io/chemOStry/
